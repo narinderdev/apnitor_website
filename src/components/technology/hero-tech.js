@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function HeroTech() {
   return (
-    <section className="bg-[#f4f6f8] py-20 md:py-24">
+    <section className="bg-[#f4f6f8] py-20 md:py-24 mt-20">
       <div className="mx-auto max-w-[1200px] px-6 grid items-center gap-12 lg:grid-cols-2">
         
         {/* LEFT CONTENT */}

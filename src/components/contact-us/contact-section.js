@@ -27,8 +27,8 @@ const steps = [
 
 export default function ContactSection() {
   return (
-    <section className="bg-[#f7f9fb] py-20 lg:py-24 mt-20">
-      <div className="mx-auto max-w-7xl px-8">
+    <section className="bg-[#f7f9fb] py-20 lg:py-24">
+      <div className="mx-auto max-w-7xl px-8  pt-10">
         <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-18">
           <div>
             <h2 className="text-[30px] font-bold leading-[0.95] tracking-[-0.03em] text-[#1843a3] md:text-[50px]">

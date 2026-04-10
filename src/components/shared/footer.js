@@ -62,7 +62,7 @@ export default function Footer() {
 
         <div className="mt-14 border-t border-[#d7dde5] pt-8">
           <div className="flex flex-col gap-4 text-[16px] text-[#7b8ba5] md:flex-row md:items-center md:justify-between">
-            <p>© 2024 Apnitor Solutions. All rights reserved.</p>
+            <p>© 2017 Apnitor Solutions. All rights reserved.</p>
 
             <div className="flex items-center gap-8">
               <span>English (US)</span>

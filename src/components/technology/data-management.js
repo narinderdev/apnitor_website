@@ -31,7 +31,7 @@ const dataItems = [
 
 export default function DataManagementSection() {
   return (
-    <section className="bg-[#f4f6f8] py-20 md:py-24">
+    <section className="bg-white py-20 md:py-24">
       <div className="mx-auto max-w-[1280px] px-8">
         <div className="text-center">
           <h2 className="text-[40px] font-extrabold tracking-[-0.03em] text-[#111827] md:text-[56px]">
@@ -51,7 +51,7 @@ export default function DataManagementSection() {
               <div
                 key={item.title}
                 className={`flex min-h-[220px] flex-col items-center justify-center rounded-[18px] px-8 py-10 text-center shadow-[0_0_0_1px_rgba(15,23,42,0.04)] ${
-                  item.highlighted ? "bg-[#eef2f6]" : "bg-white"
+                  item.highlighted ? "bg-white" : "bg-white"
                 }`}
               >
                 <div className="flex h-12 w-12 items-center justify-center">

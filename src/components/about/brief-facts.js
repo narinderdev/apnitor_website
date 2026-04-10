@@ -1,12 +1,11 @@
 import React from "react";
 
 const facts = [
-  { value: "19+", label: "YEARS\nEXPERTISE" },
-  { value: "3,500+", label: "IT\nPROFESSIONALS" },
+  { value: "9+", label: "YEARS\nEXPERTISE" },
+  { value: "20+", label: "IT\nPROFESSIONALS" },
   { value: "40+", label: "DOMAINS" },
   { value: "93%", label: "RECURRING\nCLIENTS" },
-  { value: "1,600+", label: "DELIVERED\nPROJECTS" },
-  { value: "70+", label: "COUNTRIES" },
+  { value: "100+", label: "DELIVERED\nPROJECTS" },
 ];
 
 export default function BriefFacts() {
@@ -22,7 +21,7 @@ export default function BriefFacts() {
           </h2>
         </div>
 
-        <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-3 xl:grid-cols-6">
+        <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-3 xl:grid-cols-5">
           {facts.map((fact) => (
             <div
               key={fact.value}

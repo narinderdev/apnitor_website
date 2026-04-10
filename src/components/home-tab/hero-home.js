@@ -38,7 +38,7 @@ const cards = [
 
 const HeroHome = () => {
   return (
-    <section className="relative overflow-hidden bg-[#f4f6f8] pt-24">
+    <section className="relative overflow-hidden bg-[#f4f6f8] pt-24 mt-10">
       <div className="absolute inset-x-0 top-0 h-[320px] bg-[#f7f8fa]" />
       <div className="absolute left-[-8%] top-[130px] h-[220px] w-[45%] rounded-[50%] bg-[#eef3f6]" />
       <div className="absolute right-[-10%] top-[150px] h-[260px] w-[52%] rounded-[50%] bg-[#eef3f6]" />

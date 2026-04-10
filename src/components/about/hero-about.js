@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function HeroAbout() {
   return (
-    <section className="bg-[#f7f9fb] pt-28 pb-20">
+    <section className="bg-[#f7f9fb] pt-28 pb-20 mt-10">
       <div className="mx-auto max-w-7xl px-8">
         <div className="grid items-center gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
           <div className="max-w-[470px]">
@@ -15,7 +15,7 @@ export default function HeroAbout() {
 
             <p className="mt-8 text-[18px] leading-[1.7] text-[#5b667a]">
               Apnitor is a software development and IT consulting company that
-              was founded in 2007. We help companies throughout the world to
+              was founded in 2017. We help companies throughout the world to
               achieve their business goals by providing them with high-quality
               software development services.
             </p>

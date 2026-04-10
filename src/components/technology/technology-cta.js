@@ -7,7 +7,7 @@ export default function TechnologyCtaSection() {
   const router = useRouter();
 
   return (
-    <section className="bg-white py-16 md:py-20">
+    <section className="bg-[#f4f6f8] py-16 md:py-20">
       <div className="mx-auto max-w-[1280px] px-8">
         <div className="relative overflow-hidden rounded-[28px] bg-gradient-to-r from-[#0f4aa5] via-[#3550b8] to-[#6a4dc8] px-8 py-20 text-center md:px-16">
           <div
@@ -34,14 +34,14 @@ export default function TechnologyCtaSection() {
                 onClick={() => router.push("/contact-us")}
                 className="inline-flex px-4 py-4 items-center justify-center rounded-[16px] bg-white px-10 text-[16px] font-bold text-[#0b57d0] shadow-[0_12px_28px_rgba(15,23,42,0.12)] transition hover:opacity-95"
               >
-                Contact Sales
+                Contact Us
               </button>
 
               <button
                 onClick={() => router.push("/contact-us")}
                 className="inline-flex px-4 py-4 items-center justify-center rounded-[16px] border border-white/25 bg-white/5 px-10 text-[16px] font-bold text-white transition hover:bg-white/10"
               >
-                Schedule a Demo
+                Schedule a Session
               </button>
             </div>
           </div>

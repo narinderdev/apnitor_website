@@ -3,7 +3,7 @@ import { Bot } from "lucide-react";
 
 export default function HeroServices() {
   return (
-    <section className="border-t border-[#e7ebf0] bg-[#f4f6f8] py-24 md:py-28">
+    <section className="border-t border-[#e7ebf0] bg-[#f4f6f8] py-24 md:py-28 mt-10">
       <div className="mx-auto max-w-7xl px-8">
         <div className="mx-auto max-w-[1220px] text-center">
           <p className="text-[12px] font-extrabold uppercase tracking-[0.24em] text-[#6e59cf]">
