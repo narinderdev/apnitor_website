@@ -1,6 +1,7 @@
 import { Manrope, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/shared/navbar";
+import CursorCircle from "@/components/shared/cursor-circle";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/webicon.png" type="image/png" />
       </head>
       <body className="min-h-full flex flex-col font-body">
+        <CursorCircle />
         <Navbar />
         <main className="flex-1">{children}</main>
       </body>
