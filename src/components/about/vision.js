@@ -17,7 +17,7 @@ const items = [
 
 export default function Vision() {
   return (
-    <section className="relative overflow-hidden bg-[#0e4aa8] py-16 md:py-20">
+    <section className="relative overflow-hidden bg-[#003b8b] py-16 md:py-20">
       <div className="absolute inset-0 opacity-15">
         <svg
           className="h-full w-full"
@@ -43,10 +43,10 @@ export default function Vision() {
           {items.map((item) => (
             <div
               key={item.title}
-              className="relative rounded-[16px] bg-[#114ca8] px-7 py-7 shadow-[0_0_0_1px_rgba(255,255,255,0.06)]"
+              className="relative rounded-[16px] bg-[#054297] px-7 py-7 shadow-[0_0_0_1px_rgba(255,255,255,0.06)]"
             >
               {/* LEFT BORDER LINE */}
-              <div className="absolute left-0 top-6 bottom-6 w-[3px] rounded-full bg-gradient-to-b from-[#f09cff] to-[#f09cff]" />
+              <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-gradient-to-b from-[#f09cff] to-[#f09cff]" />
 
               <h3 className="text-[28px] font-extrabold tracking-[-0.02em] text-white">
                 {item.title}

@@ -1,5 +1,11 @@
-import React from "react";
+"use client";
+
+import React, { useLayoutEffect, useRef } from "react";
 import { Zap, Layers3, Eye, BadgeCheck } from "lucide-react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const items = [
   {
@@ -25,14 +31,52 @@ const items = [
 ];
 
 export default function WhyUs() {
+  const ref = useRef(null);
+
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({
+        defaults: { ease: "power3.out" },
+        scrollTrigger: {
+          trigger: ref.current,
+          start: "top 80%",
+          toggleActions: "play none none none",
+          once: true,
+        },
+      });
+
+      tl.fromTo(
+        ".whyus-title",
+        { y: 40, autoAlpha: 0 },
+        { y: 0, autoAlpha: 1, duration: 0.8 }
+      )
+        .fromTo(
+          ".whyus-text",
+          { y: 20, autoAlpha: 0 },
+          { y: 0, autoAlpha: 1, duration: 0.6 },
+          "-=0.45"
+        )
+        .fromTo(
+          ".whyus-card",
+          { y: 36, autoAlpha: 0 },
+          { y: 0, autoAlpha: 1, duration: 0.7, stagger: 0.12 },
+          "-=0.2"
+        );
+
+      ScrollTrigger.refresh();
+    }, ref);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <section className="bg-[#f7f9fb] py-20">
+    <section ref={ref} className="bg-[#f7f9fb] py-20">
       <div className="mx-auto max-w-7xl px-8">
         <div className="text-center">
-          <h2 className="text-[42px] font-extrabold tracking-[-0.03em] text-[#123f9f]">
+          <h2 className="whyus-title text-[42px] font-extrabold tracking-[-0.03em] text-[#123f9f]">
             Why Us?
           </h2>
-          <p className="mt-3 text-[14px] text-[#6b7280]">
+          <p className="whyus-text mt-3 text-[14px] text-[#6b7280]">
             Combining technical mastery with business intuition to deliver
             exceptional results.
           </p>
@@ -45,7 +89,7 @@ export default function WhyUs() {
             return (
               <div
                 key={item.title}
-                className="rounded-[14px] bg-white px-6 py-6 shadow-[0_0_0_1px_rgba(15,23,42,0.04)]"
+                className="whyus-card rounded-[14px] bg-white px-6 py-6 shadow-[0_0_0_1px_rgba(15,23,42,0.04)]"
               >
                 <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#f3f5f9]">
                   <Icon className="h-5 w-5 text-[#111827]" strokeWidth={2.2} />

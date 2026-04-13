@@ -1,8 +1,10 @@
+import Image from "next/image";
 import React from "react";
 
 const steps = [
   {
     number: "01",
+    icon: "/icons/explore.svg",
     title: "Discover",
     description:
       "Foundation phase: redefining requirements through the lens of artificial intelligence and large language models.",
@@ -15,6 +17,7 @@ const steps = [
   },
   {
     number: "02",
+    icon: "/icons/palette.svg",
     title: "Design",
     description:
       "Visualizing the future: shifting from static interfaces to dynamic, context-aware user experiences.",
@@ -27,6 +30,7 @@ const steps = [
   },
   {
     number: "03",
+    icon: "/icons/code.svg",
     title: "Build",
     description:
       "The engine of creation: replacing laborious sprints with agentic, self-authoring engineering protocols.",
@@ -39,6 +43,7 @@ const steps = [
   },
   {
     number: "04",
+    icon: "/icons/launch.svg",
     title: "Launch",
     description:
       "The transition to production: evolving from manual checklists to seamless, zero-touch delivery systems.",
@@ -51,6 +56,7 @@ const steps = [
   },
   {
     number: "05",
+    icon: "/icons/improve.svg",
     title: "Improve",
     description:
       "The continuous loop: achieving peak performance through proactive, self-healing system optimization.",
@@ -63,10 +69,16 @@ const steps = [
   },
 ];
 
-function StepIcon({ number }) {
+function StepIcon({ icon, title }) {
   return (
     <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-[#1d4ed8] to-[#7c3aed] shadow-[0_12px_30px_rgba(76,81,191,0.28)]">
-      <span className="text-lg font-extrabold text-white">{number}</span>
+      <Image
+        src={icon}
+        alt={title}
+        width={25}
+        height={25}
+        className="object-contain"
+      />
     </div>
   );
 }
@@ -88,7 +100,9 @@ function InfoCard({ label, title, description, accent = false }) {
         </h4>
       ) : null}
 
-      <p className={`text-[17px] leading-[1.65] text-[#0f172a] ${title ? "mt-3" : "mt-4"}`}>
+      <p
+        className={`text-[17px] leading-[1.65] text-[#0f172a] ${title ? "mt-3" : "mt-4"}`}
+      >
         {description}
       </p>
     </div>
@@ -97,14 +111,21 @@ function InfoCard({ label, title, description, accent = false }) {
 
 export default function DeliveryProcess() {
   return (
-    <section className="bg-[#f6f7fb] py-20 md:py-28">
+    <section className="bg-[#f6f7fb] py-12 md:py-16">
       <div className="mx-auto max-w-[1320px] px-6 md:px-8">
         <div className="text-center">
-          <div className="mx-auto inline-flex rounded-full bg-[#ede9fe] px-5 py-2 text-[11px] font-bold uppercase tracking-[0.22em] text-[#6d28d9]">
-            The Intelligence Evolution
+          <div className="mx-auto inline-flex items-center gap-2 rounded-full bg-[#ede9fe] px-5 py-2 text-[11px] font-bold uppercase tracking-[0.22em] text-[#6d28d9]">
+            <Image
+              src="/icons/sparkle.svg" 
+              alt="AI"
+              width={14}
+              height={14}
+              className="object-contain"
+            />
+            <span>The Intelligence Evolution</span>
           </div>
 
-          <h2 className="mt-5 text-[40px] font-extrabold tracking-[-0.04em] text-[#0b4aa2] md:text-[64px]">
+          <h2 className="mt-5 text-[40px] font-semibold tracking-[-0.04em] text-[#003b8b] md:text-[54px]">
             AI Delivery Flow
           </h2>
 
@@ -130,8 +151,8 @@ export default function DeliveryProcess() {
                   <div className={isEven ? "xl:order-1" : "xl:order-2"}>
                     <div className="max-w-[560px]">
                       <div className="flex items-center gap-5">
-                        <StepIcon number={step.number} />
-                        <h3 className="text-[34px] font-extrabold tracking-[-0.03em] text-[#0b4aa2] md:text-[46px]">
+                        <StepIcon icon={step.icon} title={step.title} />
+                        <h3 className="text-[24px] font-semibold tracking-[-0.03em] text-[#0b4aa2] md:text-[34px]">
                           {step.number}. {step.title}
                         </h3>
                       </div>
@@ -141,10 +162,7 @@ export default function DeliveryProcess() {
                       </p>
 
                       <div className="mt-8 space-y-5">
-                        <InfoCard
-                          label="Before AI"
-                          description={step.before}
-                        />
+                        <InfoCard label="Before AI" description={step.before} />
 
                         <InfoCard
                           label="After AI (Vibe)"

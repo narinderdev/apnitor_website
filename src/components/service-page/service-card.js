@@ -8,8 +8,21 @@ export default function ServiceCard() {
       <div className="mx-auto max-w-[1240px]">
         <div className="grid gap-6 lg:grid-cols-[1.08fr_0.52fr]">
           <div className="group relative overflow-hidden rounded-[22px] bg-white shadow-[0_2px_10px_rgba(15,23,42,0.05)]">
-            <div className="grid min-h-[386px] grid-cols-[1fr_0.92fr]">
-              <div className="flex flex-col justify-between px-10 py-10">
+            <div className="relative min-h-[386px]">
+              {/* image block on right */}
+              <div className="absolute inset-y-0 right-0 w-[46%] overflow-hidden">
+                <Image
+                  src="/ai-girl.png"
+                  alt="AI girl"
+                  fill
+                  priority
+                  className="object-cover grayscale blur-[3px] transition-all duration-500 ease-out group-hover:blur-[1px] group-hover:grayscale-0"
+                />
+                <div className="absolute inset-0 bg-white/45" />
+              </div>
+
+              {/* content layer over full card */}
+              <div className="relative z-10 flex min-h-[386px] flex-col justify-between px-10 py-10">
                 <div>
                   <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#eef2f7]">
                     <Bot className="h-6 w-6 text-[#1459c8]" strokeWidth={2.2} />
@@ -19,10 +32,10 @@ export default function ServiceCard() {
                     Autonomous AI Agents
                   </h3>
 
-                  <p className="mt-5 max-w-[420px] text-[16px] leading-[1.75] text-[#475569]">
-                    Specialized LLM-powered agents that plan, execute, and learn.
-                    We build multi-agent systems that handle complex workflows from
-                    customer support to market analysis.
+                  <p className="mt-5 max-w-[68%] text-[16px] leading-[1.75] text-[#475569]">
+                    Specialized LLM-powered agents that plan, execute, and
+                    learn. We build multi-agent systems that handle complex
+                    workflows from customer support to market analysis.
                   </p>
                 </div>
 
@@ -36,16 +49,6 @@ export default function ServiceCard() {
                     </span>
                   ))}
                 </div>
-              </div>
-
-              <div className="relative min-h-[386px] overflow-hidden">
-                <Image
-                  src="/ai-girl.png"
-                  alt="AI girl"
-                  fill
-                  className="object-cover grayscale blur-[3px] transition-all duration-500 ease-out group-hover:blur-[1px] group-hover:grayscale-0"
-                  priority
-                />
               </div>
             </div>
           </div>

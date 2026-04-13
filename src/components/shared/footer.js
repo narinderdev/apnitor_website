@@ -31,7 +31,7 @@ export default function Footer() {
 
           <div>
             <h4 className="text-[18px] font-extrabold text-[#1843a3]">Services</h4>
-            <ul className="mt-8 space-y-5 text-[17px] text-[#5a6b85]">
+            <ul className="mt-8 space-y-2 text-[17px] text-[#5a6b85]">
               <li><a href="#">Custom Software</a></li>
               <li><a href="#">Web Development</a></li>
               <li><a href="#">Mobile Solutions</a></li>
@@ -41,8 +41,8 @@ export default function Footer() {
 
           <div>
             <h4 className="text-[18px] font-extrabold text-[#1843a3]">Company</h4>
-            <ul className="mt-8 space-y-5 text-[17px] text-[#5a6b85]">
-              <li><a href="#">About Us</a></li>
+            <ul className="mt-8 space-y-2 text-[17px] text-[#5a6b85]">
+              <li><a href="about-us">About Us</a></li>
               <li><a href="#">Careers</a></li>
               <li><a href="#">Case Studies</a></li>
               <li><a href="contact-us">Contact</a></li>
@@ -51,7 +51,7 @@ export default function Footer() {
 
           <div>
             <h4 className="text-[18px] font-extrabold text-[#1843a3]">Support</h4>
-            <ul className="mt-8 space-y-5 text-[17px] text-[#5a6b85]">
+            <ul className="mt-8 space-y-2 text-[17px] text-[#5a6b85]">
               <li><a href="#">Privacy Policy</a></li>
               <li><a href="#">Terms of Service</a></li>
               <li><a href="#">Cookie Policy</a></li>

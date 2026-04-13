@@ -1,6 +1,12 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import { CheckCircle2 } from "lucide-react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const services = [
   {
@@ -26,18 +32,73 @@ const services = [
 ];
 
 export default function SoftwareServices() {
+  const rootRef = useRef(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.from(".services-title", {
+        scrollTrigger: {
+          trigger: rootRef.current,
+          start: "top 75%",
+        },
+        y: 40,
+        opacity: 0,
+        duration: 0.8,
+        ease: "power3.out",
+      });
+
+      gsap.from(".service-item", {
+        scrollTrigger: {
+          trigger: ".services-list",
+          start: "top 80%",
+        },
+        x: -40,
+        opacity: 0,
+        duration: 0.7,
+        stagger: 0.14,
+        ease: "power3.out",
+      });
+
+      gsap.from(".services-image-wrap", {
+        scrollTrigger: {
+          trigger: ".services-image-wrap",
+          start: "top 80%",
+        },
+        x: 50,
+        opacity: 0,
+        scale: 0.96,
+        duration: 0.95,
+        ease: "power3.out",
+      });
+
+      gsap.from(".services-floating-card", {
+        scrollTrigger: {
+          trigger: ".services-image-wrap",
+          start: "top 78%",
+        },
+        y: 30,
+        opacity: 0,
+        duration: 0.7,
+        delay: 0.2,
+        ease: "back.out(1.7)",
+      });
+    }, rootRef);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <section className="bg-surface-container-low py-16 lg:py-20">
+    <section ref={rootRef} className="bg-surface-container-low py-16 lg:py-20">
       <div className="mx-auto max-w-7xl px-8">
         <div className="grid items-center gap-16 lg:grid-cols-[1.02fr_0.98fr] lg:gap-20">
-          <div className="">
-            <h2 className="text-[34px] font-semibold leading-[1.08] tracking-[-0.02em] text-[#173f96] md:text-[40px]">
+          <div>
+            <h2 className="services-title text-[34px] font-semibold leading-[1.08] tracking-[-0.02em] text-[#173f96] md:text-[40px]">
               Our software development services
             </h2>
 
-            <div className="mt-14 space-y-11">
+            <div className="services-list mt-14 space-y-11">
               {services.map((service) => (
-                <div key={service.title} className="flex items-start gap-4">
+                <div key={service.title} className="service-item flex items-start gap-4">
                   <div className="mt-1 shrink-0">
                     <CheckCircle2
                       className="h-6 w-6 text-[#0b57d0]"
@@ -58,7 +119,7 @@ export default function SoftwareServices() {
             </div>
           </div>
 
-          <div className="relative mx-auto w-full max-w-[576px] lg:mx-0">
+          <div className="services-image-wrap relative mx-auto w-full max-w-[576px] lg:mx-0">
             <div className="relative overflow-hidden rounded-[22px] shadow-2xl">
               <Image
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuDo7ROfR0WNVRvS7aWwfHdA6jU54u5XVez_L8bG_D1OTwZ1iFQbBf8gF1HOsXk20ciSOWOBbFwgNZ6QgPP4vd2onhqzrKoxmFsFJWWl-6HRgJwBC4jHVDH87bItnJMsIXMxV9nkzySMNgFnnEfAkV3nFHUY777D_LkmHC3yiFbeoKJnnca-Qt_V0_V6LYS7fUcvgh2uYYEP-ywlEe56AVumVTisW7jvXWpi4WEiM-m0qrTlMi_fDRw4DpEbNrbrp1Tz4sEporxIxR8"
@@ -70,7 +131,7 @@ export default function SoftwareServices() {
               />
             </div>
 
-            <div className="absolute -bottom-6 left-[-24px] rounded-[16px] bg-white px-6 py-5 shadow-[0_18px_40px_rgba(15,23,42,0.14)] md:px-6 md:py-5">
+            <div className="services-floating-card absolute -bottom-6 left-[-24px] rounded-[16px] bg-white px-6 py-5 shadow-[0_18px_40px_rgba(15,23,42,0.14)] md:px-6 md:py-5">
               <div className="text-[34px] font-bold leading-none text-[#0b57d0] md:text-[30px]">
                 100+
               </div>

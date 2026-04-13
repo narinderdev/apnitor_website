@@ -107,7 +107,7 @@ export default function Industries() {
       <div className="border-t border-[#e9ecef]">
         <div className="mx-auto max-w-[1280px] px-6 py-20 md:py-24">
           <div className="mx-auto max-w-[760px] text-center">
-            <h2 className="text-[34px] font-extrabold leading-[1.1] tracking-[-0.02em] text-[#1f3f97] md:text-[56px]">
+            <h2 className="text-[24px] font-semibold leading-[1.1] tracking-[-0.02em] text-[#1f3f97] md:text-[50px]">
               Industries we serve
             </h2>
             <p className="mx-auto mt-6 max-w-[820px] text-[18px] leading-[1.55] text-[#374151] md:text-[20px]">
@@ -126,7 +126,7 @@ export default function Industries() {
               <div className={item.reverse ? "lg:order-2" : ""}>
                 <div className="max-w-[610px]">
                   <h3
-                    className={`text-[24px] font-bold leading-[1.15] tracking-[-0.02em] md:text-[36px] ${item.textColor}`}
+                    className={`text-[24px] font-semibold leading-[1.15] tracking-[-0.02em] md:text-[36px] ${item.textColor}`}
                   >
                     {item.title}
                   </h3>
