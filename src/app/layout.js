@@ -18,6 +18,11 @@ const inter = Inter({
 export const metadata = {
   title: "Apnitor Solutions",
   description: "Software Company",
+  icons: {
+    icon: "/webicon.png",
+    shortcut: "/webicon.png",
+    apple: "/webicon.png",
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -26,9 +31,6 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${manrope.variable} ${inter.variable} h-full antialiased`}
     >
-      <head>
-        <link rel="icon" href="/webicon.png" type="image/png" />
-      </head>
       <body className="min-h-full flex flex-col font-body">
         <CursorCircle />
         <Navbar />
