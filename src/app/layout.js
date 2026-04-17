@@ -19,9 +19,9 @@ export const metadata = {
   title: "Apnitor Solutions",
   description: "Software Company",
   icons: {
-    icon: "/webicon.png",
-    shortcut: "/webicon.png",
-    apple: "/webicon.png",
+    icon: "/webicon-v2.png",
+    shortcut: "/webicon-v2.png",
+    apple: "/webicon-v2.png",
   },
 };
 
