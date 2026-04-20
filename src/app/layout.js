@@ -18,6 +18,14 @@ const inter = Inter({
 export const metadata = {
   title: "Apnitor Solutions",
   description: "Software Company",
+  icons: {
+    icon: [
+      { url: "/icon.png", sizes: "48x48", type: "image/png" },
+      { url: "/icon.png", sizes: "96x96", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/apple-icon.png",
+  },
 };
 
 export default function RootLayout({ children }) {
