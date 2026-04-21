@@ -5,8 +5,9 @@ export default function Footer() {
   return (
     <footer className="bg-[#f2f4f6]">
       <div className="mx-auto max-w-[1280px] px-6 pt-16 pb-8">
-        <div className="grid grid-cols-1 gap-14 md:grid-cols-2 lg:grid-cols-4">
-          <div>
+        <div className="mx-auto grid max-w-[1080px] grid-cols-1 gap-y-14 md:grid-cols-3 md:gap-x-16 lg:gap-x-24">
+          {/* Brand */}
+          <div className="flex flex-col items-start">
             <div className="flex items-center gap-3">
               <img
                 src="/icon.png"
@@ -18,7 +19,7 @@ export default function Footer() {
               </h3>
             </div>
 
-            <p className="mt-8 max-w-[290px] text-[17px] leading-[1.55] text-[#5a6b85]">
+            <p className="mt-8 max-w-[320px] text-[17px] leading-[1.7] text-[#5a6b85]">
               Expert software engineering for the modern enterprise. We turn
               complex challenges into seamless digital experiences.
             </p>
@@ -36,31 +37,12 @@ export default function Footer() {
             </div>
           </div>
 
-          <div>
-            <h4 className="text-[18px] font-extrabold text-[#1843a3]">
-              Services
-            </h4>
-            <ul className="mt-8 space-y-2 text-[17px] text-[#5a6b85]">
-              <li>
-                <a href="#">Custom Software</a>
-              </li>
-              <li>
-                <a href="#">Web Development</a>
-              </li>
-              <li>
-                <a href="#">Mobile Solutions</a>
-              </li>
-              <li>
-                <a href="#">Cloud Infrastructure</a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
+          {/* Company */}
+          <div className="flex flex-col items-start md:mx-auto">
             <h4 className="text-[18px] font-extrabold text-[#1843a3]">
               Company
             </h4>
-            <ul className="mt-8 space-y-2 text-[17px] text-[#5a6b85]">
+            <ul className="mt-8 space-y-3 text-[17px] text-[#5a6b85]">
               <li>
                 <a href="about-us">About Us</a>
               </li>
@@ -76,11 +58,12 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div>
+          {/* Support */}
+          <div className="flex flex-col items-start md:mx-auto">
             <h4 className="text-[18px] font-extrabold text-[#1843a3]">
               Support
             </h4>
-            <ul className="mt-8 space-y-2 text-[17px] text-[#5a6b85]">
+            <ul className="mt-8 space-y-3 text-[17px] text-[#5a6b85]">
               <li>
                 <a href="#">Privacy Policy</a>
               </li>
@@ -97,11 +80,11 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-14 border-t border-[#d7dde5] pt-8">
+        <div className="mx-auto mt-14 max-w-[1080px] border-t border-[#d7dde5] pt-8">
           <div className="flex flex-col gap-4 text-[16px] text-[#7b8ba5] md:flex-row md:items-center md:justify-between">
             <p>© 2017 Apnitor Solutions. All rights reserved.</p>
 
-            <div className="flex items-center gap-8">
+            <div className="flex flex-col gap-2 md:flex-row md:items-center md:gap-8">
               <span>English (US)</span>
               <span>System Status: Operational</span>
             </div>

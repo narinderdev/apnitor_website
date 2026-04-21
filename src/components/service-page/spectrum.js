@@ -1,34 +1,42 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const services = [
   {
     icon: "/icons/product-mvp.svg",
     title: "Product & MVP",
+    route: "/product-mvp",
     description:
       "Go from concept to launch in weeks, not months, with our optimized MVP cycles.",
   },
   {
     icon: "/icons/web-applications.svg",
     title: "Web Applications",
+    route: "/web-applications",
     description:
       "Scalable, responsive, and performance-first web platforms using modern architectures.",
   },
   {
     icon: "/icons/mobile-apps.svg",
     title: "Mobile Apps",
+    route: "/mobile-apps",
     description:
       "Native and cross-platform mobile experiences that users love to engage with.",
   },
   {
     icon: "/icons/saas-platforms.svg",
     title: "SaaS Platforms",
+    route: "/saas-platform",
     description:
       "Multi-tenant, secure, and robust software-as-a-service infrastructure development.",
   },
   {
     icon: "/icons/erp-solutions.svg",
     title: "ERP Solutions",
+    route: "/erp",
     list: [
       "Account Receivables",
       "Account Payable",
@@ -41,30 +49,36 @@ const services = [
   {
     icon: "/icons/cloud-devops.svg",
     title: "Cloud & DevOps",
+    route: "/cloud",
     description:
       "Automated deployment pipelines and cloud-native scaling strategies.",
   },
   {
     icon: "/icons/data-bi.svg",
     title: "Data & BI",
+    route: "/data-bi",
     description:
       "Turning raw data into actionable insights through advanced visualization and analysis.",
   },
   {
     icon: "/icons/ai-automation.svg",
     title: "AI & Automation",
+    route: "/ai-automation",
     description:
       "Integrating intelligent automation to streamline repetitive business processes.",
   },
   {
     icon: "/icons/legacy-modernization.svg",
     title: "Legacy Modernization",
+    route: "/legacy-modernization",
     description:
       "Transforming outdated systems into modern, cloud-ready high-performance architectures.",
   },
 ];
 
 export default function FullSpectrumEngineering() {
+  const router = useRouter();
+
   return (
     <section className="bg-[#f4f6f8] py-20 md:py-24">
       <div className="mx-auto max-w-[1280px] px-8">
@@ -81,7 +95,8 @@ export default function FullSpectrumEngineering() {
           {services.map((service) => (
             <div
               key={service.title}
-              className={`rounded-[18px] bg-white p-8 transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-xl ${
+              onClick={() => router.push(service.route)}
+              className={`cursor-pointer rounded-[18px] bg-white p-8 transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-xl ${
                 service.featured
                   ? "border border-[#c9d7ea] shadow-[0_8px_24px_rgba(15,23,42,0.04)]"
                   : "shadow-[0_0_0_1px_rgba(15,23,42,0.04)]"
@@ -101,7 +116,7 @@ export default function FullSpectrumEngineering() {
                 {service.title}
               </h3>
 
-              {service.list ? (
+              {"list" in service && service.list ? (
                 <ul className="mt-2 space-y-2 text-[16px] leading-[1.45] text-[#4b5563]">
                   {service.list.map((item) => (
                     <li key={item} className="flex items-start gap-3">
