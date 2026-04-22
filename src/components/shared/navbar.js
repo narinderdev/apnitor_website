@@ -30,13 +30,13 @@ const Navbar = () => {
       <nav className="bg-white/80 backdrop-blur-xl shadow-sm">
         <div className="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
           {/* Logo */}
-          {/* <Link
+          <Link
             href="/"
             className="text-xl font-bold text-blue-900 font-headline tracking-tight"
           >
             Apnitor Solutions
-          </Link> */}
-          <Link href="/" className="flex items-center">
+          </Link>
+          {/* <Link href="/" className="flex items-center">
             <Image
               src="/image.png" // place image.png inside /public folder
               alt="Apnitor Solutions"
@@ -44,7 +44,7 @@ const Navbar = () => {
               height={40}
               priority
             />
-          </Link>
+          </Link> */}
 
           {/* Nav Links */}
           <div className="hidden md:flex items-center space-x-8">
