@@ -54,6 +54,7 @@ export default function SaasPlatformsHero() {
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOPoNIff-Opwg_AdQ6T7Z8pkea__WHvR0lsFdrB2m3vaE6CmIf8DyquJ2SzOkJNYzP1kZhUCxUvfwW9AS5JTQKXFRhZwUTqWPTt87F_uNJwAY5LdWh-0D_NaUqAY_akrHdxsxPHU8k2d1f5Q6aPeW6CH2cFNeJ5gg2bps9VGNpzZjY3yZTSvz1Hnlr9afXJ_XqIHWk5Qqo5MDELJPIU-Hna5TN8-YUDxCORjOgP2kPYB0h-PUXB4_C7gNO7YfJubcHvQwd7UGnJfA"
                 alt="SaaS dashboard interface"
                 fill
+                sizes="(min-width: 1024px) 580px, 100vw"
                 className="object-cover"
                 priority
               />

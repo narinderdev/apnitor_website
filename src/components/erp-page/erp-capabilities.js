@@ -65,6 +65,7 @@ export default function ErpCapabilitiesSection() {
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfD65rdkXgLaMMkdOi1SwJW0uITVhxuubd-DmNoEN7aWGuM-JLfrLawZTt65DfKdmC6Z80xEkKljSKrfc4ZZvS-aOi2blm_3RMaAGlpoPD7ea9_1RcHJJlPeiH46ZrYnxG82TPVpBbyogGNR_V4rYlJayUNMWJ7P2JSmzEMJNmc4g34sit2URGhmVypSiWS4zqcDkJYpvK1rDnalzQdGUw85zTKl3AQO82rffa4ZHxZGH0I22V44cASLcpNQu4msa3HX4vBpKGvnk"
               alt="Industrial precision system"
               fill
+              sizes="(min-width: 1024px) 290px, 50vw"
               className="object-cover"
               priority
             />
@@ -75,6 +76,7 @@ export default function ErpCapabilitiesSection() {
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoT8hLfE3-aES67O6XkziM4TWbVT-EijRD0FLbRyhjJZpzTuswP8i-VhvSNA90ild7jTdcG8enSQ13LU6njThR6XkcY2mswJnK_mC6xXAol7Hg00-8OAdYd2BcGSar4CFQJdR8XI1g49OkGIIxQZd-w9ssXKMW6fTNQFMinGeh9ODLHVvFPMf3YiSPAUrTDl9hzkvL9WWbovcNYGB87AhAzIO_g0UBWr1XtmJwWpDM2JK03f0FfhcSwzIBU2-41I2Qkm7e1HYtrak"
               alt="Analytics dashboard display"
               fill
+              sizes="(min-width: 1024px) 290px, 50vw"
               className="object-cover"
             />
           </div>

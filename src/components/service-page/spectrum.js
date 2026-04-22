@@ -56,7 +56,7 @@ const services = [
   {
     icon: "/icons/data-bi.svg",
     title: "Data & BI",
-    route: "/data-bi",
+    route: "#",
     description:
       "Turning raw data into actionable insights through advanced visualization and analysis.",
   },
@@ -70,7 +70,7 @@ const services = [
   {
     icon: "/icons/legacy-modernization.svg",
     title: "Legacy Modernization",
-    route: "/legacy-modernization",
+    route: "#",
     description:
       "Transforming outdated systems into modern, cloud-ready high-performance architectures.",
   },

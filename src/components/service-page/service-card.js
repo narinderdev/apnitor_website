@@ -15,6 +15,7 @@ export default function ServiceCard() {
                   src="/ai-girl.png"
                   alt="AI girl"
                   fill
+                  sizes="(min-width: 1024px) 46vw, 100vw"
                   priority
                   className="object-cover grayscale blur-[3px] transition-all duration-500 ease-out group-hover:blur-[1px] group-hover:grayscale-0"
                 />

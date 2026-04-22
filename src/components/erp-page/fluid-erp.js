@@ -53,6 +53,7 @@ export default function FluidErpHero() {
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQx2OcTftO0qhK3SgCI0baVRKnw5VBR3hyrs62GCXRTfeCO8LFm5zLpdEI7HwL62anEmKBpV9fK0f7wm7sFt3g3qk3hmN6CSD9vj2JwLYwTNL1rFnOek0dYSYAecowj2REBjgchgJYCrPgFZjYcJgNsqh0pNrdPIom-IH3RonF7SJIhxk_oenZZBw6MqXouBEwHnFOgSorUCU0lja5Vd1MJl7uE1O9SNj06SSQs_184hIQJXL8m5trSBWGf4nC0Sh70WOmtJekdPw"
               alt="ERP systems control room"
               fill
+              sizes="(min-width: 1024px) 610px, 100vw"
               className="object-cover"
               priority
             />

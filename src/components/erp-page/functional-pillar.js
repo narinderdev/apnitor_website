@@ -79,6 +79,7 @@ export default function FunctionalPillarsSection() {
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhlVnf8eJo39V1-6RCIg00dG3da2zcowBfCxM5BTJ0waYzr6GOcU8_DbDIoptgAXpnifS617_4VR_SBT9S-G4fRbcxEl40gXwrB-S2hwkMbUUbZcKliH-k6g4Zpic3BQosGf5Jp-sc-Uu-s8puLR7YBPVrAOMt4Iycgx5zlFFLL9rbCapSQiRfE0gPqpHrUdrYzLlpcfbfmhYh2zXjnX4g7pe7SoiY107aJx0vYC10HPXFxRJMsyMJVj_XNKhgFEur7-OkDWVtFvM"
                   alt="Accounts payable illustration"
                   fill
+                  sizes="(min-width: 1024px) 33vw, 100vw"
                   className="object-cover"
                 />
               </div>

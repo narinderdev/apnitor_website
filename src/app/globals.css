@@ -8,8 +8,9 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter);
+  --font-body: var(--font-inter);
+  --font-headline: var(--font-manrope);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,4 +31,17 @@
 .bg-primary-container {
     --tw-bg-opacity: 1;
     background-color: rgb(18 82 179 / var(--tw-bg-opacity, 1));
+}
+
+body {
+  font-family: var(--font-inter), sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-manrope), sans-serif;
 }

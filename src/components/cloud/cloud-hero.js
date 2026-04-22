@@ -54,6 +54,7 @@ export default function CloudDevopsHero() {
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuALJb1XE-5XY6Ioh-gwP-kA6STuGxpnsPfPS3anF0irOuuIUGRpdTtyO5qLI3qrSor5YLHZ7ZF1djK_W8ZPP15ZtFJ0VCXhX6Qg8tQV6lRcD3yZR0OmznCt3yMbk5ukf-kURkAV4xIK7a9c25rtZEN8eutaiSI-r5F2juXQCj2pEwqYvACZN8Y4z44N5MFUOPmlM5kSRDT7O-cLDMwIQiqeR0k5zN9VpYr4Y8_cx9XSGB_1rB2FRmf5NBJ67hXu5_wJvCUMamdnpZ4"
               alt="Abstract cloud and data flow visualization"
               fill
+              sizes="(min-width: 1024px) 560px, 100vw"
               className="object-cover"
               priority
             />

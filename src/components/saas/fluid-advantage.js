@@ -29,6 +29,7 @@ export default function FluidAdvantageSection() {
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9Y7jH62P54aG_vsLqAEiccKkFEu1V78Wa9C0ojGD3LFtBpO-LQbZuRYWie_VNGmqBtaqSlOxoHUKpFwJWnmnMobq9pP-pubMXa4Y8rx46L1T_KSarkoIF5ImeXZbbTJNXM6550qvUb15xk7LIcAQbfZZWBBuLQNQx_wgGhGvbgLNHW5COppVA2kvJ6leKaZjxWDWXAbc8zSBbXeukDGttHOxhbUNJbb7EfKT6aPykCZctXfUO7AlL9J18-HBrayVf7ATVzFDQiWw"
               alt="Server infrastructure"
               fill
+              sizes="(min-width: 1024px) 272px, 50vw"
               className="object-cover"
               priority
             />
@@ -60,6 +61,7 @@ export default function FluidAdvantageSection() {
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzNFhc0dv8--uSwk_e7Yyl21SZwHkDqop1LT1NWVk6WR0LguutpacIRtOUml6nMI7I35b-SVs_D84I9zHRgDS9wujuggah_yCpNVeX40nfcCnRUi8byZ8Of0vDMBxq9P0El3HhJl9oqNsGvx0xxODpC7JZkysKWzmYD9Twp6S2u4pTgagAm-5V4YLbTsny2eHsX68Vu_Ifh8Fm0Yedv69KyOZ_UV76vIZR4wNbaqwCJye2izDHO6evfDW8gGItT9ENcLGV9_luL6A"
               alt="Edge hardware"
               fill
+              sizes="(min-width: 1024px) 272px, 50vw"
               className="object-cover"
             />
           </div>
