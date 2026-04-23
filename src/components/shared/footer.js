@@ -21,7 +21,7 @@ export default function Footer() {
               </h3> */}
               <Link href="/" className="flex items-center">
             <Image
-              src="/image.png" 
+              src="/logo-nobg.png" 
               alt="Apnitor Solutions"
               width={150} 
               height={40}
