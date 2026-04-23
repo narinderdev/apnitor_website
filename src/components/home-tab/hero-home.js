@@ -134,13 +134,13 @@ const HeroHome = () => {
               Speed Up Development
             </button>
 
-            <a
-              href="#"
+            <button
+              onClick={() => router.push('/portfolio')}
               className="hero-action inline-flex items-center gap-3 text-[18px] font-bold text-[#0b57c2]"
             >
               View Portfolio
               <ArrowRight className="h-5 w-5" />
-            </a>
+            </button>
           </div>
         </div>
 

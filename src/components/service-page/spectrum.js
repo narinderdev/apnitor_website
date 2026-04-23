@@ -8,35 +8,35 @@ const services = [
   {
     icon: "/icons/product-mvp.svg",
     title: "Product & MVP",
-    route: "/product-mvp",
+    route: "/services/product-mvp",
     description:
       "Go from concept to launch in weeks, not months, with our optimized MVP cycles.",
   },
   {
     icon: "/icons/web-applications.svg",
     title: "Web Applications",
-    route: "/web-applications",
+    route: "/services/web-applications",
     description:
       "Scalable, responsive, and performance-first web platforms using modern architectures.",
   },
   {
     icon: "/icons/mobile-apps.svg",
     title: "Mobile Apps",
-    route: "/mobile-apps",
+    route: "/services/mobile-apps",
     description:
       "Native and cross-platform mobile experiences that users love to engage with.",
   },
   {
     icon: "/icons/saas-platforms.svg",
     title: "SaaS Platforms",
-    route: "/saas-platform",
+    route: "/services/saas-platform",
     description:
       "Multi-tenant, secure, and robust software-as-a-service infrastructure development.",
   },
   {
     icon: "/icons/erp-solutions.svg",
     title: "ERP Solutions",
-    route: "/erp",
+    route: "/services/erp",
     list: [
       "Account Receivables",
       "Account Payable",
@@ -49,28 +49,28 @@ const services = [
   {
     icon: "/icons/cloud-devops.svg",
     title: "Cloud & DevOps",
-    route: "/cloud",
+    route: "/services/cloud",
     description:
       "Automated deployment pipelines and cloud-native scaling strategies.",
   },
   {
     icon: "/icons/data-bi.svg",
     title: "Data & BI",
-    route: "#",
+    route: "/services/data-bi",
     description:
       "Turning raw data into actionable insights through advanced visualization and analysis.",
   },
   {
     icon: "/icons/ai-automation.svg",
     title: "AI & Automation",
-    route: "/ai-automation",
+    route: "/services/ai-automation",
     description:
       "Integrating intelligent automation to streamline repetitive business processes.",
   },
   {
     icon: "/icons/legacy-modernization.svg",
     title: "Legacy Modernization",
-    route: "#",
+    route: "/services/legacy-modernization",
     description:
       "Transforming outdated systems into modern, cloud-ready high-performance architectures.",
   },

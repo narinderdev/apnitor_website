@@ -1,5 +1,7 @@
 import React from "react";
 import { Globe, Share2, AtSign } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -9,14 +11,23 @@ export default function Footer() {
           {/* Brand */}
           <div className="flex flex-col items-start">
             <div className="flex items-center gap-3">
-              <img
+              {/* <img
                 src="/icon.png"
                 alt="Apnitor Logo"
                 className="h-8 w-8 object-contain"
               />
               <h3 className="text-[18px] font-extrabold text-[#1843a3]">
                 Apnitor Solutions
-              </h3>
+              </h3> */}
+              <Link href="/" className="flex items-center">
+            <Image
+              src="/image.png" 
+              alt="Apnitor Solutions"
+              width={150} 
+              height={40}
+              priority
+            />
+          </Link>
             </div>
 
             <p className="mt-8 max-w-[320px] text-[17px] leading-[1.7] text-[#5a6b85]">
@@ -50,7 +61,7 @@ export default function Footer() {
                 <a href="#">Careers</a>
               </li>
               <li>
-                <a href="#">Case Studies</a>
+                <a href="portfolio">Case Studies</a>
               </li>
               <li>
                 <a href="contact-us">Contact</a>

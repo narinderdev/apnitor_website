@@ -1,9 +1,12 @@
-// app/components/CloudDevopsHero.tsx
+'use client'
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 export default function CloudDevopsHero() {
+  const router = useRouter();
+
   return (
     <section className="bg-[#f7f9fb] px-6 py-16 md:px-10 lg:px-20 xl:px-30 mt-14">
       <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2">
@@ -39,12 +42,12 @@ export default function CloudDevopsHero() {
               <ArrowRight className="h-5 w-5" />
             </Link>
 
-            <Link
-              href="#"
+            <button
+              onClick={() => router.push('/portfolio')}
               className="inline-flex items-center justify-center rounded-2xl bg-[#eef1f5] px-8 py-4 text-base font-semibold text-[#0b4aac] transition hover:bg-[#e4e8ee]"
             >
               View Case Studies
-            </Link>
+            </button>
           </div>
         </div>
 

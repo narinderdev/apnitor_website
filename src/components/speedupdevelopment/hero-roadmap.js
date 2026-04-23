@@ -4,9 +4,11 @@ import React, { useLayoutEffect, useRef } from "react";
 import Image from "next/image";
 import { Zap, Timer } from "lucide-react";
 import { gsap } from "gsap";
+import { useRouter } from "next/navigation";
 
 export default function HeroRoadmap() {
   const ref = useRef(null);
+  const router = useRouter();
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -102,7 +104,7 @@ export default function HeroRoadmap() {
               Start Your Rapid Build
             </button>
 
-            <button className="roadmap-btn inline-flex h-[54px] items-center justify-center rounded-[14px] bg-white px-8 text-[16px] font-bold text-[#0f469f] shadow-[0_10px_24px_rgba(15,23,42,0.06)] transition hover:bg-[#f8fafc]">
+            <button className="roadmap-btn inline-flex h-[54px] items-center justify-center rounded-[14px] bg-white px-8 text-[16px] font-bold text-[#0f469f] shadow-[0_10px_24px_rgba(15,23,42,0.06)] transition hover:bg-[#f8fafc]" onClick={() => router.push('/portfolio')}>
               View Case Studies
             </button>
           </div>

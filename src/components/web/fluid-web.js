@@ -2,8 +2,11 @@
 
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 export default function FluidWebHero() {
+  const router = useRouter();
+  
   return (
     <section className="bg-[#eef0f3] px-6 py-20 md:px-10 lg:px-16 xl:px-24 mt-14">
       <div className="mx-auto grid max-w-[1200px] items-center gap-12 lg:grid-cols-2">
@@ -37,7 +40,7 @@ export default function FluidWebHero() {
               <ArrowRight className="h-5 w-5" />
             </button>
 
-            <button className="inline-flex items-center justify-center rounded-[14px] bg-[#e5e7eb] px-6 py-3 text-[14px] font-semibold text-[#111827] transition hover:bg-[#d1d5db]">
+            <button className="inline-flex items-center justify-center rounded-[14px] bg-[#e5e7eb] px-6 py-3 text-[14px] font-semibold text-[#111827] transition hover:bg-[#d1d5db]" onClick={() => router.push('/portfolio')}>
               View Case Studies
             </button>
           </div>

@@ -2,8 +2,10 @@
 
 import Image from "next/image";
 import { ArrowRight, Smartphone, Zap } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 export default function MobileEcosystemsHero() {
+  const router = useRouter();
   return (
     <section className="bg-[#eff2f7] px-6 py-20 md:px-10 lg:px-16 xl:px-24 mt-14">
       <div className="mx-auto grid max-w-[1220px] items-center gap-14 lg:grid-cols-[1fr_1.02fr]">
@@ -33,7 +35,7 @@ export default function MobileEcosystemsHero() {
               <ArrowRight className="h-5 w-5" />
             </button>
 
-            <button className="inline-flex items-center justify-center rounded-[16px] px-6 py-2 text-[16px] font-semibold text-[#0b4aa6] transition hover:text-[#083d91]">
+            <button className="inline-flex items-center justify-center rounded-[16px] px-6 py-2 text-[16px] font-semibold text-[#0b4aa6] transition hover:text-[#083d91]" onClick={() => router.push('/portfolio')}>
               View Case Studies
             </button>
           </div>
