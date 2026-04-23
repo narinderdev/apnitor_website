@@ -97,7 +97,7 @@ export default function Footer() {
 
             <div className="flex flex-col gap-2 md:flex-row md:items-center md:gap-8">
               <span>English (US)</span>
-              <span>System Status: Operational</span>
+              {/* <span>System Status: Operational</span> */}
             </div>
           </div>
         </div>
