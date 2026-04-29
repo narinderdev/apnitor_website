@@ -15,18 +15,18 @@ export default function Footer() {
                 src="/icon.png"
                 alt="Apnitor Logo"
                 className="h-8 w-8 object-contain"
-              />
+              /> */}
               <h3 className="text-[18px] font-extrabold text-[#1843a3]">
                 Apnitor Solutions
-              </h3> */}
+              </h3>
               <Link href="/" className="flex items-center">
-            <Image
+            {/* <Image
               src="/logo-nobg.png" 
               alt="Apnitor Solutions"
               width={150} 
               height={40}
               priority
-            />
+            /> */}
           </Link>
             </div>
 
